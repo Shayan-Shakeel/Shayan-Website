@@ -1,0 +1,529 @@
+
+html {
+  font-size: 16px; /* Sets the base font size for the entire document */
+}
+.box8{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.box9{
+   /* width: 50%; */
+      background-color: white; 
+      flex-wrap: wrap;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      /* align-items: end; */
+      /* text-align: center; */
+      flex-direction: column;
+      line-height: 0;
+      
+}
+
+a:link, a:visited{
+color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.v1{
+  font-size: 18px;
+  color: #919191;
+}
+
+.v2{
+  font-size: 18px;
+  color: #919191
+}
+.box10{
+      max-width: 335px;
+      width: 100%;
+      background-color: white; 
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+}
+.pill-container{
+    background-color: #02D096;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pill-shape {
+      background-color: white;
+      border-radius: 100px;
+      width: 100%;
+      max-width: 210px;
+      height: 140px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: Kumbh Sans;
+      font-weight: 400;
+    }
+
+    .pill-container {
+      display: flex;
+      gap: 40px; /* Match spacing between the pills */
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 60px 0;
+    }
+    .box3{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        background-color:#02D096 ;
+        font-family: Kumbh Sans;
+        font-weight: 900;
+    }
+    .box4{
+        background-color: #02D096;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: Kumbh Sans;
+        gap: 65px;
+    }
+    
+    .col5{
+      
+      background-color: white;
+      border-radius: 70px;
+      max-width: 450px;
+      width: 100%;
+      height: 300px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+
+      
+    }.cool5{
+      background-color: white;
+      border-radius: 70px;
+      max-width: 450px;
+      width: 100%;
+      height: 300px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+
+      
+    }
+
+    .col11{ 
+      display: block;
+    }
+    .circle {
+        max-width: 110px;
+        width: 100%; 
+        height: 110px; 
+        background-color: #9B78E7; 
+        border-radius: 50%;
+        justify-content: center;
+        display: flex;
+        align-self: center;
+        position: absolute;
+        flex-wrap: wrap;
+        
+    }
+    .p1{
+      justify-content: center;
+      background-color: #02D096;
+      display: flex;
+      color: white;
+      font-family: Kumbh Sans;
+      font-weight: 400;
+      /* font-size: 12px; */
+      flex-wrap: wrap;
+    }
+    .b1{
+      justify-content: center;
+      background-color: #02D096;
+      display: flex;
+      color: white;
+      padding-bottom: 30px;
+      font-family: Kumbh Sans;
+      font-weight: 900;
+      flex-wrap: wrap;
+    }
+    .c1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+     .testimonial {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    /* Even testimonials = avatar on left */
+    .testimonial:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .testimonial img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 50px; /* more space for giant tail */
+      position: relative;
+      z-index: 2;
+    }
+    
+    .images{
+      display: flex;
+      justify-content: center;
+    }
+    h2{
+      justify-content: center;
+      text-align: center;
+      color: #02D096;
+    }
+    .bubble {
+      background: #02D096;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 20px;
+      max-width: 500px;
+      position: relative;
+      z-index: 1;
+      font-family: Kumbh Sans;
+      font-weight: 400;
+    }
+
+    /* Tail pointing to avatar on the RIGHT (odd testimonials) */
+    .testimonial:nth-child(odd) .bubble::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -40px; /* push further */
+      transform: translateY(-50%);
+      border-width: 24px;  /* huge triangle */
+      border-style: solid;
+      border-color: transparent transparent transparent #02D096;
+    }
+
+    /* Tail pointing to avatar on the LEFT (even testimonials) */
+    .testimonial:nth-child(even) .bubble::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -40px; /* push further */
+      transform: translateY(-50%);
+      border-width: 24px;  /* huge triangle */
+      border-style: solid;
+      border-color: transparent #02D096 transparent transparent;
+    }
+
+    .stars {
+      color: gold;
+      margin-left: 5px;
+    }
+    .bubble strong {
+      font-size: 1.1rem;
+    }
+    .f1{
+      display: flex;
+      justify-content: center;
+      /* align-items: center;
+      text-align: center; */
+      flex-direction: column;
+      background-color: #9B78E7;
+      text-wrap: wrap;
+    }
+        
+    .container1 {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: flex-start;       
+  background-color: #9B78E7;
+  padding: 40px 0;
+  flex-wrap: wrap;
+ 
+}
+
+
+
+.column {
+  flex: 1;        
+  max-width: 350px;          
+  padding: 20px;
+  /* font-size: 12px; */
+  color: white;
+  font-family:  Kumbh Sans;
+  font-weight: 400;
+  flex-wrap: wrap;
+}
+
+.f2{
+      justify-content: center;
+      background-color: #9B78E7;
+      display: flex;
+      color: white;
+      text-align: center;
+      font-size: 10px;
+      margin-top: -15px;
+      font-family:  Kumbh Sans;
+      font-weight: 400;
+      flex-wrap: wrap;
+    }
+    .fi{
+       justify-content: center;
+      background-color: #9B78E7;
+      display: flex;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      flex-wrap:wrap ;
+    }
+    .copy{
+      justify-content: center;
+      background-color: #9B78E7;
+      display: flex;
+      color: white;
+      text-align: center;
+      font-size: 10px;
+      padding-bottom: 20px;
+      font-family:  Kumbh Sans;
+      font-weight: 400;
+    }
+    h4{
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+   
+
+
+
+
+
+
+    /* Tablet devices (≤ 992px) */
+@media (max-width: 992px) {
+  .box8 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  p{
+    font-size: 14px;
+    margin-bottom: 0px;
+
+  }
+
+  
+
+  
+
+  .box3{
+    align-items: center;
+    text-align: center;
+  }
+
+  .box9,
+  .box10 {
+    width: 100%;
+    max-width: 90%;
+    padding: 20px;
+    height: auto;
+    line-height: 1;
+  }
+
+  .pill-container {
+    gap: 20px;
+    padding: 40px 10px;
+  }
+
+  .pill-shape {
+    max-width: 45%;
+    height: auto;
+    padding: 20px;
+  }
+
+  button {
+    width: 90% !important;
+    font-size: 16px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  .box4 {
+    gap: 40px;
+    padding: 30px 10px;
+  }
+
+  /* x */
+
+  .testimonial {
+     /* flex-direction: column !important; */
+    /* text-align: center; */
+  
+   width: 100%;
+   padding-bottom: 50px;
+   align-items: center;
+  }
+
+  .testimonial img {
+    /* margin: 20px auto; */
+    width: 50px;
+    height: 50px;
+  }
+
+  /* .bubble {
+    max-width: 90%;
+  } */
+
+  /* .bubble::after {
+    display: none;
+  } */
+
+  .container1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .column {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .f2,
+  .copy {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+
+/* Mobile devices (≤ 576px) */
+@media (max-width: 576px) {
+  .pill-shape {
+    max-width: 100%;
+  }
+
+  .p1{
+    align-items: center;
+    text-align: center;
+    font-size: 8px !important;
+  }
+  /* .testimonial{
+    display: block;
+  } */
+
+  
+
+  button {
+    width: 80% !important;
+    font-size: 16px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .col5{
+    
+    border-radius: 100px;
+  }
+  .cool5{
+    background-color: #FED2D2;
+    border-radius: 100px;
+  }
+  .v1{
+    color: black !important;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    margin-bottom: -2px;
+  }
+  .circle{
+  width: 90px;
+  height: 90px;
+  }
+
+
+  .bubble {
+    font-size: 14px;
+    padding: 15px;
+  }
+  .testimonial {
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+      margin-bottom: 2rem;
+      flex-wrap: nowrap;
+    }
+    .testimonial:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+    .testimonial:nth-child(odd) .bubble::after {
+      content: "";
+      position: absolute;
+      top: 17%;
+      right: 220px; /* push further */
+      transform: translateY(50%);
+      border-width: 24px;  /* huge triangle */
+      border-style: solid;
+      border-color: transparent #02D096 transparent transparent;
+    }
+    .circle{
+       transform: rotate(90deg);
+    }
+    .v2{
+      color: #000;
+    }
+    
+  
+
+    
+  
+}
+
+@media screen and (min-width: 925spx) and (max-width: 14000px){
+.images{
+    display: none;
+}
+.reviews-container{
+  display: none;
+}
+ }
+@media screen and (min-width: 10px) and (max-width: 925px){
+.c1{
+    display: none;
+}
+
+
+
+ }
+
+ @media screen and (min-width: 923px) and (max-width: 14000px){
+.reviews-container{
+    display: none;
+}
+
+
+
+ }
